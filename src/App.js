@@ -3,10 +3,11 @@ import './App.css';
 
 const food = [
   "bananas",
-  "bacon", 
-  "mango", 
+  "bacon",
+  "pizza",
+  "mango",
   "nachos",
-  "KFC", 
+  "KFC",
   "sushi",
   "tinned spaghetti"
 ]
@@ -14,17 +15,17 @@ const food = [
 function App() {
   return (
     <div className="App">
-      <h1>Hello World!</h1>
+      <h1>Hello world!</h1>
 
-    <ul>
-      {
-        food.map(individualFoodItem => {
-          return <li>
-            {individualFoodItem}
-          </li>
-        })
-      }
-    </ul>
+      <ul>
+        {
+          food.map(individualFoodItem => {
+            return <li>
+              {individualFoodItem}
+            </li>
+          })
+        }
+      </ul>
 
     </div>
   );
